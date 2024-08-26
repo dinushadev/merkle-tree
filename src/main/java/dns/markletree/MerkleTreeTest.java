@@ -7,6 +7,7 @@ import java.util.List;
 public class MerkleTreeTest {
     public static void main(String[] args) throws NoSuchAlgorithmException {
         List<String> data = List.of("a", "b", "c", "d","e");
+        System.out.println("Leaf: " + Arrays.toString(data.toArray()));
         MerkleTree tree = new MerkleTree(data);
         System.out.println("Root Hash: " + tree.getRootHash());
 
